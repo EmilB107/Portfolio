@@ -17,7 +17,7 @@ const jobs: Job[] = [
     companyUrl: "https://countable.ca/",
     description:
       "Interned at Countable, contributing to Cortico — a Canadian healthcare patient engagement platform serving thousands of healthcare professionals across Canada. Worked across the full frontend lifecycle through a ticket-based Scrum workflow, translating design mockups from Figma or Adobe XD into responsive UI, as well as building features and fixing bugs from spec-only tickets. Stack included Riot.js, Next.js, and Django templates on the frontend, with exposure to Django's backend layer via Django REST Framework.",
-    tech: ["Next.js", "Riot.js", "Django", "Django REST Framework", "REST APIs", "Git", "Docker", "Debugging"],
+    tech: ["Next.js", "Riot.js", "Django", "Django REST Framework", "REST APIs", "Git", "Docker", "Figma", "Scrum", "Debugging"],
   },
   {
     dates: "Jul 2025 — Sep 2025",
