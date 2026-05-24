@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import CursorGlow from "@/components/ui/CursorGlow";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <CursorGlow />
         {children}
         <ScrollIndicator />
+        <Analytics />
       </body>
     </html>
   );
