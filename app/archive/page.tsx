@@ -70,7 +70,7 @@ const projects: ArchiveProject[] = [
     year: "2025",
     description:
       "A C# web app built with ASP.NET MVC demonstrating OOP inheritance across animal category models, MVC routing, Razor views, and Bootstrap styling. Includes animal sound playback per category.",
-    tech: ["C#", "ASP.NET MVC", ".NET Framework", "Bootstrap"],
+    tech: ["C#", "ASP.NET MVC", ".NET 8", "Bootstrap"],
     github: "https://github.com/EmilB107/Animalandia",
     live: null,
     desktop: "/assets/imgs/animalandia.onrender.com_(XX-Large).png",
