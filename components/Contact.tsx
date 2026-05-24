@@ -1,3 +1,5 @@
+import { ExternalLinkIcon } from "@/components/ui/Icons";
+
 const EMAIL = "johnemilbragais@gmail.com";
 
 export default function Contact() {
@@ -22,19 +24,10 @@ export default function Contact() {
       </a>
       <a
         href="#"
-        className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 group inline-flex items-center gap-2 mt-2"
+        className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 group inline-flex items-center gap-1 mt-2"
       >
         View Full Résumé
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
+        <ExternalLinkIcon />
       </a>
       </div>
     </section>

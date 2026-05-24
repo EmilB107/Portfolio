@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArchiveCard, { type ArchiveProject } from "@/components/ArchiveCard";
+import { ArrowLeftIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Project Archive — John Emil Bragais",
+  title: "Archive | John Emil Bragais",
   description: "A complete archive of projects by John Emil Bragais, frontend developer.",
 };
 
@@ -84,22 +85,9 @@ export default function ArchivePage() {
 
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-slate-200 font-medium text-sm hover:text-teal-300 transition-colors duration-200 mb-12 group"
+          className="inline-flex items-center gap-2 text-slate-200 font-medium text-sm mb-12 group"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1"
-            aria-hidden="true"
-          >
-            <line x1="19" y1="12" x2="5" y2="12" />
-            <polyline points="12 19 5 12 12 5" />
-          </svg>
+          <ArrowLeftIcon />
           John Emil Bragais
         </Link>
 

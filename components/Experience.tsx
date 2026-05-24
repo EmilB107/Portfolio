@@ -7,6 +7,8 @@ type Job = {
   tech: string[];
 };
 
+import { ExternalLinkIcon } from "@/components/ui/Icons";
+
 const jobs: Job[] = [
   {
     dates: "Nov 2025 — May 2026",
@@ -36,26 +38,24 @@ export default function Experience() {
       </div>
       <div className="flex flex-col gap-4">
           {jobs.map((job) => (
-            <a
+            <div
               key={job.title + job.company}
-              href={job.companyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-lg p-5 border border-transparent hover:bg-slate-800/50 hover:shadow-lg hover:border-slate-700 transition-all duration-300"
+              className="group rounded-lg md:p-5 border border-transparent md:hover:bg-slate-800/50 md:hover:shadow-lg md:hover:border-slate-700 transition-all duration-300"
             >
               <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">{job.dates}</p>
-              <h3 className="text-slate-200 font-medium inline-flex items-center gap-1 flex-wrap">
+              <h3 className="text-slate-200 font-medium mb-2 flex items-center gap-1 flex-wrap">
                 {job.title} ·{" "}
-                <span className="text-teal-300 inline-flex items-center gap-1 group-hover:text-teal-200 transition-colors duration-200">
+                <a
+                  href={job.companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group text-teal-300 inline-flex items-center gap-1"
+                >
                   {job.company}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
-                </span>
+                  <ExternalLinkIcon />
+                </a>
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mt-2">{job.description}</p>
+              <p className="text-slate-400 text-sm leading-relaxed">{job.description}</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {job.tech.map((tag) => (
                   <span
@@ -66,7 +66,7 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
-            </a>
+            </div>
           ))}
       </div>
     </section>

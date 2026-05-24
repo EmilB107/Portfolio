@@ -56,7 +56,7 @@ export default function Projects() {
         {projects.map((project) => (
         <div
           key={project.name}
-          className="group rounded-lg p-5 border border-transparent hover:bg-slate-800/50 hover:shadow-lg hover:border-slate-700 transition-all duration-300"
+          className="group rounded-lg md:p-5 border border-transparent md:hover:bg-slate-800/50 md:hover:shadow-lg md:hover:border-slate-700 transition-all duration-300"
         >
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1">
@@ -92,7 +92,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Live demo of ${project.name}`}
-                  className="hover:text-teal-300 transition-colors duration-200"
+                  className="group"
                 >
                   <ExternalLinkIcon />
                 </a>
@@ -106,23 +106,10 @@ export default function Projects() {
       <div className="mt-8">
         <Link
           href="/archive"
-          className="inline-flex items-center gap-1 text-slate-200 font-medium text-sm group hover:text-teal-300 transition-colors duration-200"
+          className="inline-flex items-center gap-1 text-slate-200 font-medium text-sm group"
         >
           View Full Project Archive
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
-            aria-hidden="true"
-          >
-            <polyline points="15 3 21 3 21 9" />
-            <line x1="10" y1="14" x2="21" y2="3" />
-          </svg>
+          <ExternalLinkIcon />
         </Link>
       </div>
 

@@ -51,27 +51,51 @@ export default function ArchiveCard({ project }: { project: ArchiveProject }) {
                   />
                 </div>
                 {hasToggle && (
-                  <div className="flex gap-1 px-3 py-2 border-t border-slate-700/30">
-                    <button
-                      onClick={(e) => { e.stopPropagation(); setView("desktop"); }}
-                      className={`text-xs px-2 py-0.5 rounded-full transition-colors duration-200 ${
-                        view === "desktop"
-                          ? "bg-teal-400/20 text-teal-300"
-                          : "text-slate-400 hover:text-slate-200"
-                      }`}
-                    >
-                      Desktop
-                    </button>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); setView("mobile"); }}
-                      className={`text-xs px-2 py-0.5 rounded-full transition-colors duration-200 ${
-                        view === "mobile"
-                          ? "bg-teal-400/20 text-teal-300"
-                          : "text-slate-400 hover:text-slate-200"
-                      }`}
-                    >
-                      Mobile
-                    </button>
+                  <div className="flex items-center justify-between px-3 py-2 border-t border-slate-700/30">
+                    <div className="flex gap-1">
+                      <button
+                        onClick={(e) => { e.stopPropagation(); setView("desktop"); }}
+                        className={`text-xs px-2 py-0.5 rounded-full transition-colors duration-200 ${
+                          view === "desktop"
+                            ? "bg-teal-400/20 text-teal-300"
+                            : "text-slate-400 hover:text-slate-200"
+                        }`}
+                      >
+                        Desktop
+                      </button>
+                      <button
+                        onClick={(e) => { e.stopPropagation(); setView("mobile"); }}
+                        className={`text-xs px-2 py-0.5 rounded-full transition-colors duration-200 ${
+                          view === "mobile"
+                            ? "bg-teal-400/20 text-teal-300"
+                            : "text-slate-400 hover:text-slate-200"
+                        }`}
+                      >
+                        Mobile
+                      </button>
+                    </div>
+                    <div className="flex md:hidden gap-3 text-slate-400">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`GitHub repository for ${project.name}`}
+                        className="hover:text-teal-300 transition-colors duration-200"
+                      >
+                        <GitHubIcon />
+                      </a>
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Live demo of ${project.name}`}
+                          className="group"
+                        >
+                          <ExternalLinkIcon />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 )}
               </>
@@ -90,12 +114,12 @@ export default function ArchiveCard({ project }: { project: ArchiveProject }) {
                   <h3 className="text-slate-200 font-medium">{project.name}</h3>
                   <span className="text-slate-500 text-xs font-mono">{project.year}</span>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">{project.description}</p>
+                <p className="text-slate-400 text-sm leading-relaxed">{project.description}</p>
                 {project.note && (
                   <p className="mt-2 text-xs text-amber-400/70">⚠ {project.note}</p>
                 )}
               </div>
-              <div className="flex gap-3 shrink-0 text-slate-400">
+              <div className={`gap-3 shrink-0 text-slate-400 ${hasToggle ? "hidden md:flex" : "flex"}`}>
                 <a
                   href={project.github}
                   target="_blank"
@@ -111,7 +135,7 @@ export default function ArchiveCard({ project }: { project: ArchiveProject }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Live demo of ${project.name}`}
-                    className="hover:text-teal-300 transition-colors duration-200"
+                    className="group"
                   >
                     <ExternalLinkIcon />
                   </a>
