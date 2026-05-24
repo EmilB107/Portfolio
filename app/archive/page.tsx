@@ -73,8 +73,8 @@ const projects: ArchiveProject[] = [
     tech: ["C#", "ASP.NET MVC", ".NET Framework", "Bootstrap"],
     github: "https://github.com/EmilB107/Animalandia",
     live: null,
-    desktop: null,
-    mobile: null,
+    desktop: "/assets/imgs/animalandia.onrender.com_(XX-Large).png",
+    mobile: "/assets/imgs/animalandia.onrender.com_(Extra Small).png",
   },
 ];
 

@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@/components/ui/Icons";
+import { ExternalLinkIcon, DownloadIcon } from "@/components/ui/Icons";
 
 const EMAIL = "johnemilbragais@gmail.com";
 
@@ -22,13 +22,25 @@ export default function Contact() {
       >
         {EMAIL}
       </a>
-      <a
-        href="#"
-        className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 group inline-flex items-center gap-1 mt-2"
-      >
-        View Full Résumé
-        <ExternalLinkIcon />
-      </a>
+      <div className="flex items-center gap-4 mt-2">
+        <a
+          href="https://john-emil-bragais-resume.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 group inline-flex items-center gap-1"
+        >
+          View Full Résumé
+          <ExternalLinkIcon />
+        </a>
+        <a
+          href="https://john-emil-bragais-resume.vercel.app/Bragais_Resume.pdf"
+          download
+          className="text-slate-400 text-sm hover:text-teal-300 transition-colors duration-200 inline-flex items-center gap-1"
+        >
+          Download PDF
+          <DownloadIcon />
+        </a>
+      </div>
       </div>
     </section>
   );

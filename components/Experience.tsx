@@ -1,3 +1,5 @@
+import { ExternalLinkIcon } from "@/components/ui/Icons";
+
 type Job = {
   dates: string;
   title: string;
@@ -6,8 +8,6 @@ type Job = {
   description: string;
   tech: string[];
 };
-
-import { ExternalLinkIcon } from "@/components/ui/Icons";
 
 const jobs: Job[] = [
   {
