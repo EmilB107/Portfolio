@@ -1,0 +1,74 @@
+type Job = {
+  dates: string;
+  title: string;
+  company: string;
+  companyUrl: string;
+  description: string;
+  tech: string[];
+};
+
+const jobs: Job[] = [
+  {
+    dates: "Nov 2025 — May 2026",
+    title: "Frontend Developer Intern",
+    company: "Countable Web Productions",
+    companyUrl: "https://countable.ca/",
+    description:
+      "Interned at Countable, contributing to Cortico — a Canadian healthcare patient engagement platform serving thousands of healthcare professionals across Canada. Worked across the full frontend lifecycle through a ticket-based Scrum workflow, translating design mockups from Figma or Adobe XD into responsive UI, as well as building features and fixing bugs from spec-only tickets. Stack included Riot.js, Next.js, and Django templates on the frontend, with exposure to Django's backend layer via Django REST Framework.",
+    tech: ["Next.js", "Riot.js", "Django", "Django REST Framework", "REST APIs", "Git", "Docker", "Debugging"],
+  },
+  {
+    dates: "Jul 2025 — Sep 2025",
+    title: "Information Technology Intern",
+    company: "Cerebro",
+    companyUrl: "https://cerebro.ph/",
+    description:
+      "Provided hands-on support for the Learning Management System (LMS) and Student Information System, assisting staff with account creation, password resets, fee assignment, and course management. Worked extensively on Moodle — creating and assigning categories, fixing broken courses, and deploying updated educational content.",
+    tech: ["IT Service Management", "Learning Management Systems", "Student Information System", "Educational Technology", "Moodle"],
+  },
+];
+
+export default function Experience() {
+  return (
+    <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+      <div className="mb-6 lg:sr-only">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+      </div>
+      <div className="flex flex-col gap-4">
+          {jobs.map((job) => (
+            <a
+              key={job.title + job.company}
+              href={job.companyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-lg p-5 border border-transparent hover:bg-slate-800/50 hover:shadow-lg hover:border-slate-700 transition-all duration-300"
+            >
+              <p className="text-slate-500 text-xs uppercase tracking-widest mb-2">{job.dates}</p>
+              <h3 className="text-slate-200 font-medium inline-flex items-center gap-1 flex-wrap">
+                {job.title} ·{" "}
+                <span className="text-teal-300 inline-flex items-center gap-1 group-hover:text-teal-200 transition-colors duration-200">
+                  {job.company}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </span>
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed mt-2">{job.description}</p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {job.tech.map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-teal-400/10 text-teal-300 text-xs rounded-full px-3 py-1"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </a>
+          ))}
+      </div>
+    </section>
+  );
+}
