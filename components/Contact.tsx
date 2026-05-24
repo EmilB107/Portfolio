@@ -35,7 +35,7 @@ export default function Contact() {
         <a
           href="https://john-emil-bragais-resume.vercel.app/Bragais_Resume.pdf"
           download
-          className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 inline-flex items-center gap-1"
+          className="text-slate-200 text-sm font-medium hover:text-teal-300 transition-colors duration-300 inline-flex items-center gap-2 group"
         >
           Download PDF
           <DownloadIcon />
