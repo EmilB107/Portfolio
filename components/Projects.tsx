@@ -31,10 +31,11 @@ const projects: Project[] = [
   {
     name: "Animalandia",
     description:
-      "A C# web app built with ASP.NET MVC demonstrating OOP inheritance across animal category models, MVC routing, Razor views, and Bootstrap styling. Includes animal sound playback per category.",
-    tech: ["C#", "ASP.NET MVC", ".NET 8", "Bootstrap"],
+      "A C# web app built with ASP.NET Core MVC demonstrating OOP inheritance across animal category models, MVC routing, Razor views, and Bootstrap styling. Includes animal sound playback per category.",
+    note: "Hosted on Render's free tier — may take 30–60 seconds to load if the server has spun down from inactivity.",
+    tech: ["C#", "ASP.NET Core MVC", ".NET 8", "Bootstrap"],
     github: "https://github.com/EmilB107/Animalandia",
-    live: null,
+    live: "https://animalandia.onrender.com/",
   },
 ];
 
