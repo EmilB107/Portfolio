@@ -45,3 +45,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Inspiration
+
+- [Brittany Chiang](https://brittanychiang.com)
+- [Yash Jangid](https://yash-jangid-portfolio.vercel.app)
