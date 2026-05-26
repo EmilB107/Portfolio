@@ -10,11 +10,22 @@ export const metadata: Metadata = {
 
 const projects: ArchiveProject[] = [
   {
+    name: "Pomonotify",
+    year: "2026",
+    description:
+      "A focused work timer combining Pomodoro sessions, task notes, and Spotify music. Features a 25/5/15 minute Pomodoro cycle with auto-switching, a persistent todo list with active task tracking, and an embedded Spotify player with curated study playlists.",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    github: "https://github.com/EmilB107/Pomonotify",
+    live: "https://pomonotify.vercel.app",
+    desktop: "/assets/imgs/pomonotify.vercel.app_(XX-Large).png",
+    mobile: "/assets/imgs/pomonotify.vercel.app_(Extra Small).png",
+  },
+  {
     name: "Expense Tracker",
     year: "2025",
     description:
       "A full-featured expense tracking web app built as an internship technical assessment. Features real-time search, weekly ISO 8601 aggregation, confirmation modals, and automatic localStorage persistence — structured with a composable-based architecture separating UI from business logic.",
-    tech: ["Vue 3", "Vite", "Tailwind CSS", "Composition API", "localStorage"],
+    tech: ["Vue 3", "Vite", "Tailwind CSS", "localStorage"],
     github: "https://github.com/EmilB107/ExpenseTracker",
     live: "https://emilb107.github.io/ExpenseTracker/",
     desktop: "/assets/imgs/emilb107.github.io_ExpenseTracker_(XX-Large).png",
