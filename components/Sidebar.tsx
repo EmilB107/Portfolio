@@ -50,11 +50,8 @@ export default function Sidebar() {
             John Emil Bragais
           </h1>
           <h2 className="text-xl font-medium text-slate-200 mt-3">
-            Frontend Developer
+            Frontend-Focused CS Student
           </h2>
-          <p className="text-slate-400 mt-4 text-sm leading-relaxed max-w-xs">
-            I translate designs into responsive web experiences.
-          </p>
         </div>
 
         {/* Nav */}
