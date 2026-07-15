@@ -50,7 +50,7 @@ export default function Sidebar() {
             John Emil Bragais
           </h1>
           <h2 className="text-xl font-medium text-slate-200 mt-3">
-            Frontend-Focused CS Student
+            Frontend Developer · CS Grad 2026
           </h2>
         </div>
 
