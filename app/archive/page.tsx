@@ -5,10 +5,22 @@ import { ArrowLeftIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
   title: "Archive | John Emil Bragais",
-  description: "A complete archive of projects by John Emil Bragais, frontend developer.",
+  description: "A complete archive of projects by John Emil Bragais, software developer.",
 };
 
 const projects: ArchiveProject[] = [
+  {
+    name: "JCash",
+    year: "2026",
+    description:
+      "A full-stack simulated digital wallet with registration, PIN-based session login, cash-in, peer-to-peer transfers, and paged transaction history. Every transfer posts balanced debit/credit ledger entries in a single database transaction, with protection against concurrent overspending and idempotency keys so retried requests never move money twice. Backed by unit, MockMvc, and PostgreSQL integration tests running in GitHub Actions CI.",
+    note: "Hosted on Render's free tier — may take 30–60 seconds to load on first sign-in if the server has spun down from inactivity.",
+    tech: ["Angular", "TypeScript", "Java 21", "Spring Boot", "Spring Security", "PostgreSQL", "Flyway", "Docker", "Render"],
+    github: "https://github.com/EmilB107/JCash-Banking-App",
+    live: "https://jcash-cwha.onrender.com",
+    desktop: "/assets/imgs/jcash-cwha.onrender.com_(XX-Large).png",
+    mobile: "/assets/imgs/jcash-cwha.onrender.com_(Extra Small).png",
+  },
   {
     name: "Pomonotify",
     year: "2026",

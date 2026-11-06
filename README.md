@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Personal portfolio — Frontend Developer based in the Philippines.
+Personal portfolio — Software Developer based in the Philippines.
 
 Built with Next.js, TypeScript, and Tailwind CSS. Features a split layout on desktop with a sticky sidebar and scrollable content sections, a full project archive with screenshot previews and a lightbox, and a cursor radial glow effect.
 

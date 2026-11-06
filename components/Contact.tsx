@@ -9,11 +9,6 @@ export default function Contact() {
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Contact</h2>
       </div>
       <div className="flex flex-col gap-4 max-w-md">
-      <p className="text-slate-400 leading-relaxed">
-        I'm currently open to work and internship opportunities! Whether you have a question,
-        a project idea, or just want to connect, my inbox is always open and I'll do my best
-        to get back to you.
-      </p>
       <a
         href={`https://mail.google.com/mail/?view=cm&to=${EMAIL}`}
         target="_blank"
