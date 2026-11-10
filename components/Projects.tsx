@@ -36,24 +36,6 @@ const projects: Project[] = [
     github: "https://github.com/EmilB107/ExpenseTracker",
     live: "https://emilb107.github.io/ExpenseTracker/",
   },
-  {
-    name: "Arf & Meow Co.",
-    description:
-      "A product catalog management system with role-based access control for Super Admins, Admins, and Project Managers. Includes inventory tracking, SKU and price management, image uploads, and a full test suite of 61 tests across auth, CRUD, and access control.",
-    note: "Hosted on Render's free tier — may take 30–60 seconds to load if the server has spun down from inactivity.",
-    tech: ["Laravel 12", "PHP", "MySQL", "Blade", "Docker", "Render"],
-    github: "https://github.com/EmilB107/Arf-Meow-Co.",
-    live: "https://arf-meow-catalog.onrender.com",
-  },
-  {
-    name: "Animalandia",
-    description:
-      "A C# web app built with ASP.NET Core MVC demonstrating OOP inheritance across animal category models, MVC routing, Razor views, and Bootstrap styling. Includes animal sound playback per category.",
-    note: "Hosted on Render's free tier — may take 30–60 seconds to load if the server has spun down from inactivity.",
-    tech: ["C#", "ASP.NET Core MVC", ".NET 8", "Bootstrap"],
-    github: "https://github.com/EmilB107/Animalandia",
-    live: "https://animalandia.onrender.com/",
-  },
 ];
 
 export default function Projects() {
